@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href ="bio.css">
+</head>
+<body>
+      <div class="grid-container">
+
+        <div class="content">
+            <div id="mainGrid">
+                <div class="User">
+<img src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"title="userPic">
+                <div class="Userdata">
+<p>Name: 
+    <input type="text"required title="Username" class="userN"placeholder="UserName" onchange="alert(this.value +','+'Hello')">
+</p>
+<input type="submit" value="Done" id="sub">
+                </div>
+                <div class="Game">
+                    <p>Ты готов начать играть?</p>
+                    <a href="Game.html">Запуск 1 игры</a>
+
+                    <a href="Game2.html"><br>Запуск 2 игры</a>
+                    <a href="miniGame.html"><br>Запуск Каталога мини игр</a>
+                </div>
+            </div>
+        </div>
+        
+    <br>
+
+
+
+<input id="num1" placeholder="Введите число"/>
+
+<div id="operator_btns">
+  <button id="plus" class="operator" onclick="op='+'">+</button>
+  <button id="minus" class="operator" onclick="op='-'">-</button>
+  <button id="times" class="operator" onclick="op='*'">x</button>
+  <button id="divide" class="operator" onclick="op='/'">:</button>
+  <button id="pers" class="operator" onclick="op='%'">%</button>
+</div>
+
+<input id="num2" placeholder="Введите число" />
+
+<button onclick="func()">Равняется</button>
+
+<p id="result">Результат:</p>
+<script>
+  var op; //выбранный оператор
+  function func() {
+    var result;
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    switch (op) {
+      case '+':
+        result = num1 + num2;
+        break;
+      case '-':
+        result = num1 - num2;
+        break;
+      case '*':
+        result = num1 * num2;
+        break;
+        case '%':
+        result = num1 % num2;
+        break;
+      case '/':
+        if (num2) {
+          result = num1 / num2;
+        } else {
+          result = 'бесконечность';
+        }
+        break;
+      default:
+        result = 'выберите операцию';
+    }
+
+    document.getElementById("result").innerHTML = result;
+    
+  }
+</script>
+<a class="home" href="main.html" >На главную</a></li>
+         </div>
+    
+
+    </div>
+
+</body>
+</html>
+

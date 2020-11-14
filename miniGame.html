@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href ="mini.css">
+</head>
+<body>
+     
+     <script src="mini.js"></script>
+     <div class="container">
+        <section>
+            <table class="game_box">
+                <tr>
+                    <td><div class="box">
+                        <p >Гуглер</p>
+                        <form action="https://www.google.com.ua/">
+                            <input type="search">
+                           <p><input type="submit" value="Найти"></p> 
+                          </form>
+                    </div></td>
+                    <td><div class="box">
+                        <p>Крестик-Нолик</p>
+                       <table class="colrow">
+                           <tr>
+                               <td><input type="text"></td>
+                               <td><input type="text"></td>
+                               <td><input type="text"></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" ></td>
+                            <td><input type="text" ></td>
+                            <td><input type="text" ></td>
+                        </tr>
+                       </table>
+                       <p id="rlod"><button onclick="reload()">Заново</button> </p>
+                    </div></td>
+                    <td><div class="box">
+                        <p>Равенство</p>
+                        <button id="startRaw">Начинаем</button>
+                    </div></td> 
+                </tr>
+                <tr>
+                    <td><div class="box" onmousemove="console(event)">
+                        <p >Координаты</p>
+                        <div id="coords"></div> 
+                    </div></td>
+                    <td><div class="box">
+                        <p>Small market</p>
+                        <div class="item">
+                      <table class="bloc_item">
+                          <tr>
+                              <td>
+                              <button><img src="img/croissant.svg" width="20px" height="20px"></button>
+                              <button><img src="img/donut.svg"width="20px" height="20px"></button>
+                              <button><img src="img/baby-food.svg"width="20px" height="20px"></button>
+                              <button><img src="img/burger.svg"width="20px" height="20px"></button>
+                            </td>
+                              <td> 
+                                  Выьерите кол-во:
+                                  <select>
+                                <option value="0"></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                    </select>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                      </table>
+                      
+                
+                    </div>
+                    </div></td>
+                    <td><div class="box">
+                        <p>jumper</p></div></td>
+                </tr>
+                <tr>
+                    <td><div class="box">
+                        <p>link web site</p></div></td>
+                    <td><div class="box">
+                        <p>Home</p></div></td>
+                    <td><div class="box">
+                        <p>Icons</p></div></td>
+                </tr>
+                  
+            </table>
+        </section>
+     </div>
+
+     <div class="home">
+        <a href="wor.html">Вернуться назад</a>
+    </div>
+<dialog id="dlog">
+<form method="dialog">
+<section>
+<p>Какой ответ верный?</p>
+<p><input type="radio">5>3</p>
+<p><input type="radio">5>4</p>
+<p><input type="radio">5>6</p>
+</section>
+
+<button type="submit" id="aggre">Подтвердить</button>
+</form>
+
+</dialog>
+
+  <script>
+       /*Выводим диалоговое окно*/
+       (function() {
+       
+        let agre =document.getElementById('aggre') //Кнопка подтверждения
+        var opend=document.getElementById('startRaw') //обозначение диалогового окна
+        opend.addEventListener('click', function() {
+      dlog.showModal()
+      
+    })
+    agre.addEventListener('click', function() {
+        alert("Yes")
+        dlog.close()
+        location.reload()
+        
+    })
+    })()
+  </script>
+  

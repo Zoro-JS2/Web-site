@@ -1,0 +1,153 @@
+.grid-container {
+    height:100vh;
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         ". . . . ."
+                         "side . content . sidebar"
+                         ". . . . ."
+                         "footer footer footer footer footer";
+    grid-template-columns: 130px 5px 1fr 5px 130px;
+    grid-template-rows: 90px 5px 1fr 5px 90px;
+}
+.header { grid-area: header;
+ background-color:#3a5eb3;
+    
+}
+.menu { grid-area:side; 
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+     padding: 0%;
+ }
+.sidebar { grid-area: sidebar;
+     background-color: 
+     rgb(255, 255, 255); 
+     margin: 0%;
+     padding: 0%;
+    }
+.content { grid-area: content; 
+    background-color: rgb(228, 228, 228);
+    padding-left: 4px;
+ 
+ }
+.footer { grid-area: footer;
+     background-color: rgb(29, 28, 28);
+     margin: 0%;
+     padding: 0%;
+     }
+
+   a{
+    text-decoration: none;  
+    color: rgb(0, 0, 0);
+   }
+     .menu li{
+        text-align: center;
+        margin: 2%;
+        float: right;
+        margin-top: 20px;
+       margin-left: 40px;
+         margin-right: 200px;
+       display: block;
+       list-style: none;
+        
+      
+       padding: 10px; 
+       background: #4db8d8; 
+      }
+      .menu li:hover{
+        background: #1df78a; 
+        box-shadow: 5 6 10px rgba(0, 0, 0, 0.5);
+      }
+  h1{
+      font-size: 100px;
+      color: rgb(63, 63, 63);
+     
+  }
+  h6{
+  width: 250px;
+    border-bottom: 2px solid blue;
+      font-size: 40px;
+  }
+
+   
+   .logo{
+       margin: 0px;
+       position: absolute;
+       margin-left: 135px;
+       margin-right: 800px;
+       margin-top: -16px;
+   }
+  
+   .nize{
+       font-size: 20px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
+
+    
+
+  .bmenu {
+    text-decoration: underline;
+    text-align: center;
+    margin: 2%;
+    width: 90%;
+    height: 920px;
+    float: left;
+    margin-top: 20px;
+   display: block;
+   list-style: none;
+   text-decoration: wavy;
+   outline-style: dashed; 
+   outline-color: #e20b0b; 
+   padding: 10px; 
+   background: #293f36; 
+   }
+   .blok1{ 
+  
+       height: 300px;
+font-size: 40px;
+color: rgb(199, 97, 13);
+
+   }
+   .blok1:hover{
+    background: #643804; 
+   }
+   .blok2{
+    height: 300px;
+    font-size: 40px;
+    color: rgb(25, 149, 231);
+
+       }
+       .blok2:hover{
+        background: #072579; 
+       }
+       .blok3{      
+        height: 200px;
+        font-size: 40px;
+        color: rgb(199, 187, 13);
+        
+           }
+           .blok3:hover{
+            background: #c98506; 
+           }    
+           .bimg1{
+               float: left;
+               width: 200px;
+               height: 200px;
+           } 
+           .bimg2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+           }
+           .bimg3{
+            float: left;
+            width: 200px;
+            height: 200px;
+           }
+           
+         
+         
+
+
+
+

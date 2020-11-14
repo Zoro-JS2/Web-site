@@ -1,0 +1,226 @@
+.grid-container {
+    height:100vh;
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         ". . . . ."
+                         "side . content . sidebar"
+                         ". . . . ."
+                         "footer footer footer footer footer";
+    grid-template-columns: 130px 5px 1fr 5px 130px;
+    grid-template-rows: 90px 5px 1fr 5px 90px;
+}
+.header { grid-area: header;
+ background-color:#000000;
+    
+}
+.menu { grid-area:side; 
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+     padding: 0%;
+ }
+.sidebar { grid-area: sidebar;
+     background-color: 
+     rgb(255, 255, 255); 
+     margin: 0%;
+     padding: 0%;
+    }
+.content { grid-area: content; 
+    background-color: rgb(99, 99, 99);
+    padding-left: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+ 
+ }
+.footer { grid-area: footer;
+     background-color: rgb(116, 116, 116);
+     margin: 0%;
+     padding: 1%;
+     height: 200px;
+     }
+
+     .menu li{
+        text-align: center;
+        margin: 2%;
+        float: left;
+        margin-top: 20px;
+       margin-left: 160px;
+         margin-right: 200px;
+       display: block;
+       list-style: none;
+       text-decoration: none;
+       outline-style: dashed; 
+       outline-color: #f10000; 
+       padding: 10px; 
+       background: #ffffff; 
+      }
+      .menu li:hover{
+        background: #1df78a; 
+      }
+      a{
+        text-decoration: none;
+      }
+      .abo{
+          margin: 2px;
+          width: 99.5%;
+        outline-style: double; 
+        outline-color: #ffffff; 
+        font-family: 'Architects Daughter', cursive;
+        background-color: rgb(146, 146, 146);
+      }
+      .abo a{
+          color: rgb(0, 171, 223);
+      }
+      h2{
+          margin: 0%;
+          font-size: 20px;
+          text-align: center;
+      }
+      .tel{
+          margin-left: 20px;
+      }
+      .footer p{
+        outline-style: double; 
+        outline-color: #ffffff; 
+        width: 11%;
+    
+      }
+      .post{
+          margin-left: 70%;
+          margin-top: -9%;
+      }
+      .home{
+        color: white;
+        text-decoration: none;
+        background-color: rgb(31, 31, 31);
+        border-radius: 2px;
+        margin-left: 50%;
+      }
+   .calculator{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-gap: 4px;
+     margin-top: 20px;
+     position: relative;
+     left: 20%;
+     background-color: rgb(114, 121, 104);
+     width: 300px;
+     height: 200px;
+     border-radius: 8px;
+
+   }
+   .item{
+     background-color: lightblue;
+   }
+      /*
+work_desine
+      */
+      #demo {
+        text-align: center;
+        font-size: 40px;
+        margin-top:0px;
+        background:rgba(255, 255, 255, 0.521);
+        width:450px;
+     margin-left: 40%;
+     height: 200px;
+
+      }
+      header{
+        width: 100%;
+        height: 45%;
+        background-color: rgb(85, 85, 85);
+        margin-top: 0%;
+        padding: 0%;
+      }
+      #mainGrid{
+        display: flex;
+        column-count: 3;
+        justify-content: space-between;
+   
+        height: 40%;
+      }
+      /* user */
+      .User{
+        border-radius: 9px ;
+        margin: 4px;
+    height: 160px;
+    width: 400px;
+background-color: rgb(233, 233, 233);
+      }
+      .User img{
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      .userN{
+        width: 150px;
+        margin-bottom: 7px;
+        text-decoration: solid darkcyan;
+        background-color: rgb(161, 158, 105);
+        border-radius: 6px;
+      
+      }
+      #sub{
+     margin-top: -55px;
+        margin-left: 320px;
+        width: 70px;
+        height: 20px;
+        border-radius: 7px;
+        background: rgb(248, 215, 125);
+      }
+      .Userdata p{
+        margin-left: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        background-color: seagreen;
+        width: 240px;
+        border-radius: 2px;
+
+      }
+      /*Gamemode*/
+      .Game{
+        position: absolute;
+        margin-top: -150px;
+        margin-left: 550px;
+        width: 400px;
+        height: 150px;
+        border: 2px green;
+        background-color: rgb(43, 43, 43);
+        border-radius: 6px;
+      }
+      .Game a{
+        text-decoration: none;
+        font-size: 23px;
+        color: rgb(98, 169, 216);
+        margin-left: 20%;
+        position: relative;
+        bottom: 20px;
+        right: 20px;
+      }
+      .Game a:hover{
+        color: green;
+        font-size: 26px;
+        font-family: cursive;
+      }
+      .Game p{
+        margin-left: 20%;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        
+      }
+
+.image{
+  float: right;
+  margin: 4px;
+  width: 250px;
+  height: 370px ;
+  border-radius: 5px;
+  
+}
+#result{
+  width: 120px;
+  height: 20px;
+  background-color: darkslategray;
+  color: aliceblue;
+}
